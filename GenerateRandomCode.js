@@ -11,7 +11,7 @@ var num = "0123456789";
 export function TextCode( textLength ){
   for( var i=0; i < textLength; i++ )
   {
-      textCode += alphabet.charAt(Math.floor(Math.random() * alphabet.length));
+      textCode = alphabet.charAt(Math.floor(Math.random() * alphabet.length));
   }
 
   result = textCode;
@@ -22,7 +22,7 @@ export function TextCode( textLength ){
 export function NumCode( numLength ){
   for( var i=0; i < numLength; i++ )
   {
-      numCode += num.charAt(Math.floor(Math.random() * num.length));
+      numCode = num.charAt(Math.floor(Math.random() * num.length));
   }
 
   result = numCode;
@@ -34,12 +34,12 @@ export function TextNumCode( textLength, numLength ){
 
    for( var i=0; i < textLength; i++ )
    {
-       textCode += alphabet.charAt(Math.floor(Math.random() * alphabet.length));
+       textCode = alphabet.charAt(Math.floor(Math.random() * alphabet.length));
    }
 
    for( var i=0; i < numLength; i++ )
    {
-       numCode += num.charAt(Math.floor(Math.random() * num.length));
+       numCode = num.charAt(Math.floor(Math.random() * num.length));
    }
 
    result = textCode+numCode;
