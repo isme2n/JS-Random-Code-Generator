@@ -3,11 +3,17 @@ Text, Number, Text+Number Random Code Generator
 
 ## Usage
 
+first, install package.
+
+> npm install react-random-code-generator --save
+
+second, just Use
+
 >
 >
 >import GenerateRandomCode from 'GenerateRandomCode';
 >
->...
+> ...
 >
 >genetrateCode(){
 >
@@ -15,3 +21,13 @@ Text, Number, Text+Number Random Code Generator
 >
 >  }
 >  
+
+
+## Syntax
+
+TextCode(textLength);
+
+NumCode(numLength);
+
+TextNumCode(textLength, numLength);
+
